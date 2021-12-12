@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="indah.css">
+           <meta name="viewport" content="width=device-width , initial-scale=1.0">
+           <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+          
+           <title> Indah-hotels About us</title>
+       
+       <style>
+           .banner h2{
+ 
+ float: right;
+ background-image: url(34.jfif);
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ width: 100%;
+ height:auto;
+ text-align: center;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-size: xx-large;
+color: rgb(255, 251, 251);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  letter-spacing: 3px;
+  margin-left: 50px;
+ 
+
+}
+.section{
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 30px;
+    font-family: 'Comfortaa', cursive;}
+
+.section p{ 
+    margin-top: 300px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid black;
+    font-family: 'Comfortaa', cursive;}
+    /*grid*/
+
+    .table{
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .table tr{
+       
+        padding-top: 30px;
+
+    }
+    .table img{
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        width: 600px;
+        height: 400px;
+        
+    }
+    .table p{
+        width: 400px;
+        margin-right: 200px;
+        margin-left: 2em;
+        font-family: 'Comfortaa', cursive;
+        padding-bottom: 60px;
+        font-size: 20px;
+        border-bottom: 1px solid black ;
+     
+    
+    }
+    td h2{
+        width: 400px;
+        margin-right: 200px;
+        margin-left: 40px;
+        font-family: 'Comfortaa', cursive;
+       
+        font-size: 30px;
+       
+     
+    }
+    .bod4{
+        width: 400px;
+        margin-right: 200px;
+        margin-left: 520px;
+        font-family: 'Comfortaa', cursive;
+       
+        font-size: 40px;
+    }
+    .bod5{
+        width: 450px;
+        margin-right: 200px;
+        margin-left: 470px;
+        font-family: 'Comfortaa', cursive;
+       
+        font-size: 40px;
+    }
+    .button {
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #00fdfd;
+    border-radius: 30px;
+} 
+.bod1{
+  display: grid;
+  max-width: 700px;
+  padding-left: 350px;
+}
+
+.bod3 {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+}
+
+.bod2 {
+  font-family: sans-serif;
+  padding-left: 1em;
+  line-height: .9em;
+  background: rgba(0, 0, 0, .3);
+  color: #fff;
+  height: 90px;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+}
+.main{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+ 
+}
+.main img{
+  width: 300px;
+  height: 300px;
+}
+
+.donation-container {
+	height: auto;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+
+.donation-box {
+	width: 390px;
+	height: 386px;
+	background-color: #F5F5F5;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	-o-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+
+.donation-box .title {
+	background-color: #8ddbd1;
+	width: 100%;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	color: white;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-size: 15px;
+}
+
+.donation-box .donate-button {
+	background-color: #8ddbd1;
+	width: 100%;
+	color: white;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-size: 18px;
+	bottom: 0px;
+	position: absolute;
+	cursor: pointer;
+	font-weight: 800;
+}
+
+.donation-box .fields {
+	width: 59%;
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: 15px;
+}
+
+.donation-box .fields input {
+	width: 90%;
+	font-size: 17px;
+	padding: 10px;
+	border-radius: 4px;
+	border-width: 0px;
+	color: #5C5C5C;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	margin-bottom: 10px;
+	-webkit-font-smoothing: antialiased;
+}
+
+::-webkit-input-placeholder {
+   color: #cdcdcd;
+   font-size: 15px;
+}
+
+:-moz-placeholder { 
+   color: #cdcdcd;
+   font-size: 15px;
+}
+
+::-moz-placeholder {  
+   color: #cdcdcd;
+   font-size: 15px; 
+}
+
+:-ms-input-placeholder {  
+   color: #cdcdcd;
+   font-size: 15px;
+}
+
+.donation-box .amount {
+	width: 30%;
+	display: block;
+	position: absolute;
+	top: 60px;
+	right: 15px;
+}
+
+.donation-box .amount .button {
+	width: 100%;
+	background-color: gray;
+	margin-bottom: 10px;
+	text-align: center;
+	color: white;
+	padding: 15px 0px 15px 0px;
+	border-radius: 4px;
+	font-size: 20px;
+	cursor: pointer;
+	
+	-webkit-transition: 400ms background-color;
+	-moz-transition: 800ms opacity, 800ms right;
+	-ms-transition: 800ms opacity, 800ms right;
+	-o-transition: 800ms opacity, 800ms right;
+	transition: 200ms background-color;
+}
+
+.donation-box .amount .button:hover {
+	background-color: #393939;
+}
+
+.donation-box .amount .button.selected {
+	background-color: #393939;
+}
+
+.donation-box .amount .button input {
+	min-width: 34px;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	background-color: transparent;
+	color: white;
+	font-family: Montserrat, sans-serif;
+	font-size: 20px;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	border-bottom: 2px dashed white;
+	-webkit-font-smoothing: antialiased;
+	
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	-o-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+
+.set-amount {
+	max-width: 96px;
+}
+
+.switch {
+  position: absolute;
+  top: 190px;
+  left: 15px;
+  margin: 20px auto;
+  height: 26px;
+  width: 58.5%;
+  background: white;
+  border-radius: 3px;
+}
+
+.switch-label {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 49%;
+  line-height: 26px;
+  font-size: 11px;
+  color: #5C5C5C;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+.switch-label:active {
+  font-weight: bold;
+}
+
+.switch-label-off {
+  padding-left: 2px;
+}
+
+.switch-label-on {
+  padding-right: 2px;
+}
+
+.switch-input {
+  display: none;
+}
+.switch-input:checked + .switch-label {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.65);
+  
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+}
+.switch-input:checked + .switch-label-on ~ .switch-selection {
+  left: 114px;
+}
+
+.switch-selection {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  left: 2px;
+  width: 49%;
+  height: 22px;
+  background: #bce2e0;
+  border-radius: 3px;
+  background-color: #bce2e0;
+  
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+
+.checkboxes {
+	position: absolute;
+	top: 242px;
+	left: 13px;
+}
+
+.checkboxes label {
+	position: relative;
+	top: -8px;
+	font-size: 13px;
+	color: gray;
+}
+
+.checkbox {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #bbe9e9;
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+	
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	-o-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+
+.checkbox:active, .checkbox:checked:active {
+	
+}
+
+.checkbox:checked {
+	background-color: rgb(175, 174, 174);
+	border: 1px solid ;
+	color: white;
+}
+
+.checkbox:checked:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: white;
+}
+
+.confirm {
+	display: none;
+	position: absolute;
+	top: 335px;
+	left: 15px;
+	right: 15px;
+	font-size: 16px;
+	
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	-o-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+
+.confirm i {
+	font-weight: bold;
+	text-decoration: underline;
+	font-style: normal;
+}
+.review td{
+width: 400px;
+height: auto;
+}
+
+           </style>
+    </head>
+    <body>
+        <header >
+            <ul class="navigation" >    
+                <li><a href="#"><img style="height: 30px;width: 30px;" src="bubble-chat.png" alt="Chat icon"></a></li></b>
+                <li><a href="#"><img style="height: 30px;width: 30px;" src="question.png" alt="Help icon"></a></li></b>
+                <li><a href="#"><img style="height: 30px;width: 30px;" src="internet.png" alt="Language icon">English</a></li></b>
+                
+                        
+                <a href="indah.html"> <img class="image" style="width: 200px;height:auto ; " src="Add a heading.png" alt="logo of indah"></a>
+        </ul>
+       
+        
+    <ul class="nav" >
+     
+        <div>
+    
+            <li style="padding-left: 20px;" ><a href="login.html">JoinIn/Login </a>  </li>
+            <li style="padding-left: 20px;"  ><a href="#">About Us</a>  </li>
+        <li style="padding-left: 20px;"  ><a href="loyalty.html">Loyalty Program</a>  </li>
+        <li style="padding-left: 20px;" ><a href="news.html"> News </a>  </li>
+        <li style="padding-left: 20px; " ><a href="offers.html">Offers</a> </li>
+            <li style="padding-left: 20px;"  ><a href="location.html">Find Hotel </a> </li>
+          
+                
+    </div>
+    </ul>
+    </nav>
+    </div>
+    </header>
+    <DIV class="banner">  
+        <H2>About Indah<br><br><span><p style="font-size: large;">One of the top hospitality chains in the world...</p></span></H2>
+        
+        </DIV> <br><br>
+        <audio controls autoplay style="margin-left: 500px;">
+              
+          <source src="Aboutus.mp3" type="audio/mpeg">
+        
+        </audio>
+      
+      <section class="section">
+        <h2>By increasing the number of our brands we are adding more to our portfolio and also increasing our Indah-family members.</h2>
+    </section>
+    <img style="margin-left: 230px; width: 900px;height: 500px;margin-top: 30px;border-bottom: 2px solid grey;padding-bottom: 60px;" src="staff.jfif" alt="">
+
+<section style=" margin-left: 50px;
+margin-right: 50px;
+padding-bottom: 30px;
+font-family: 'Comfortaa', cursive;margin-top:100px" >
+    <h2>Indah was founded in 1990, when Venkatesh Iyer, one of our founders, converted his beach row house into a small accommodation for visitors. Later, when his hospitality became famous, he and his 2 friends, Shreya Maheshwari, and Alok Rathod, realised that this could be the beginning of something big. And that's when Indah was born. </h2>
+</section><br><br><br>
+      <table class="table">
+        <tr>
+           
+            <td >
+                <h2>Why Choose Indah?</h2><p><br> Indah is not just the place for those looking for an authentic and peaceful 
+                getaway, but also for those who are always on the go and need a 
+                professional and reliable stay. Our staff and services are primarily dedicated towards making our customers feel at home. Today we have 10000+ happy customers and hotels across 10+ countries. Caring for people and their comfort is our core value. Due to our customer's well wishes today Indah is one of the best hospitality chains across the world.  <br><br> <a href="location.html"><button class="button button1">View location</button></a></td>
+            <td><img src="aboutus1.jpg" alt=""></td>
+         </tr>
+        </table>
+        <table class="table">
+            <tr>
+                <td><img src="aboutus2.jpg" alt=""></td>
+              
+                <td
+                > <h2>Saving the dying art</h2><p><br>  Many artisans and craftsperson are losing their jobs and identity just because of reducing value of their skill in market. We try to extend a helping hand towards these people by selling their products at Indah shop, so that they can get back to work and their skill would be appreciated. <br><a href="location.html"><button class="button button1">Buy Now</button></a></td>
+            </tr> 
+        </table>
+        <table class="table">
+            <tr>
+               
+                <td><H2>Making big dreams come true</H2><p><br> These eyes are filled with dreams and ambition, Indah hotels are donating 20% of their revenue to these little ones; so that they can live their big dreams. Come and be the part of this delightful change. <br> <a href="#"><button class="button button1">Donate Now</button></a></td>
+                <td><img src="aboutus3.jpg" alt=""></td>
+             </tr>
+            </table>
+            <table class="table">
+                <tr>
+                    <td><img src="aboutus4.png" alt=""></td>
+                    
+                
+                    <td>
+                        <H2>One step towards sustainability</H2><p><br> Indah-hotels believe in healing the world and reducing the burden on mother earth. The biggest burden on our planet is the increase in landfills. We believe in making a change; hence we are trying our best to reduce it. We are trying to be eco-friendly by cutting the amount of waste. <br> <a href="news.html"><button class="button button1">Read More</button></a>  </p></td>
+                </tr> 
+            </table>
+           
+                <table class="table">
+                    <tr>
+                       
+                        <td>
+                            <h2>We care for our employees</h2><p><br> We hire experienced people and excel in our quality of service. We are always open to employ  people having professional approach and increase our Indah-family. Do come and join us!  <br><br><a href="#"><button class="button button1">Career Opportunities</button></a> <br></p></td>
+                        <td><img src="aboutus5.jpg" alt=""></td>
+                     </tr>
+                    </table>
+                    <table class="table">
+                        <tr>
+                            <td><img src="aboutus6.jfif" alt=""></td>
+                            
+                            <td>
+                                <h2>Indah-Community</h2><p><br>Now Indah's family members are across 10+ countries in the world. We care about every community attached to us and try our best to maintain the level of our service without hurting their sentiments. Come and join us today!  <br> <a href="#"><button class="button button1">Join Us</button></a><br> </p></td>
+                        </tr> 
+                    </table>
+                    <table class="table">
+                        <tr>
+                           
+                            <td> <h2>Happy moments with us</h2><p><br>Be yourself at Indah-hotels/villas. Book your staycation with us and we promise a great experience to you. Amazing experience awaits.. <a href="#"> <br><br> <a href="#"><button class="button button1">Read More</button></a><br></a></p></td>
+                            <td><img src="aboutus7.jpg" alt=""></td>
+                         </tr>
+                        </table>
+                        <H1 class="bod4" >Voice of Indah</H1><br><br><br>
+                        <div class="bod1">
+                            <div class="bod2">
+                              <h1 style="padding-top: 20px;">Venkatesh</h1>
+                              <p style="padding-top: 20px;">Founder of Indah</p>
+                            </div>
+                            <img class="bod3" src="bod4.jpg">
+                          </div><br><br>
+                          <div class="bod1">
+                            <div class="bod2">
+                              <h1 style="padding-top: 20px;">Shreya Maheshwari</h1>
+                              <p style="padding-top: 20px;">CEO of Indah</p>
+                            </div>
+                            <img class="bod3" src="bod2.jpg">
+                          </div>
+                          <br><br>
+                          <div class="bod1">
+                            <div class="bod2">
+                              <h1 style="padding-top: 20px;">Alok Rathod</h1>
+                              <p style="padding-top: 20px;">Director of Indah</p>
+                            </div>
+                            <img class="bod3" src="bod1.jpg">
+                          </div><br><br>
+                          <div class="bod1">
+                            <div class="bod2">
+                              <h1 style="padding-top: 20px;">Neha Sundari</h1>
+                              <p style="padding-top: 20px;">Co-founder of Indah</p>
+                            </div>
+                            <img class="bod3" src="bod3.jpg">
+                          </div><br><br><br>
+                          <h2 class="bod5" >Our impact on world</h2><br><br>
+<p style="font-size: 20px;margin-left: 100px; margin-right: 90px;">Since last 10 years Indah is celebrating the Joy of giving. We as a company know our duty and we are trying our best to reach out to these underprivileged children. We are not just providing education but also essential stuff like food, medicine etc. We aim to see the smile on their faces shining as bright as little stars. </p>
+<div class="main">
+    <img src="au1.jpg" alt="">
+     <img src="au2.jpg" alt="">
+     <img src="au3.jpg" alt="">
+     <img src="au4.jpg" alt="">
+</div>
+<div class="donation-container">
+            
+    <div class="donation-box">
+        <div class="title">Donation Information</div>
+        
+        <div class="fields">
+            <input type="text" id="firstName" placeholder="First Name"> </input>
+            <input type="text" id="lastName" placeholder="Last Name"> </input>
+            <input type="text" id="email" placeholder="Email"> </input>
+        </div>
+        
+        <div class="amount">
+            <div class="button">$30</div>
+            <div class="button">$50</div>
+            <div class="button">$100</div>
+            <div class="button">$<input type="text" class="set-amount" placeholder=""> </input></div>
+        </div>
+        
+        <div class="switch">
+            <input type="radio" class="switch-input" name="view" value="One-Time" id="one-time" checked="">
+            <label for="one-time" class="switch-label switch-label-off">One-Time</label>
+            <input type="radio" class="switch-input" name="view" value="Monthly" id="monthly">
+            <label for="monthly" class="switch-label switch-label-on">Monthly</label>
+            <span class="switch-selection"></span>
+        </div>
+        
+        <div class="checkboxes">
+            <input type="checkbox" id="receipt" class="checkbox" />
+            <label for="receipt">Email Me A Receipt</label>
+            <br />
+            <input type="checkbox" id="anon" class="checkbox" />
+            <label for="anon">Give Anonymously</label>
+            <br />
+            <input type="checkbox" id="list" class="checkbox" />
+            <label for="list">Add Me To Email List</label>
+        </div>
+        
+        <div class="confirm">
+            
+        </div>
+        
+        <div class="donate-button"><i class="fa fa-credit-card"></i> Donate Now</div>
+    </div>
+    
+</div><br><br><br>
+<p style="font-size: 20px;margin-left: 100px; margin-right: 90px;text-align: center;">Trying to be as eco-friendly as possible, we have not just reduced the overall carbon footprint of our organization, but have also encouraged others to "Go Green". </p>
+<div class="main">
+    <img src="au5.jpg" alt="">
+     <img src="au6.png" alt="">
+     <img src="au7.jfif" alt="">
+     <img src="au8.jpg" alt="">
+</div>
+
+<br><br>
+<h2 style="margin-left: 400px;">What Our members say about us...</h2><br><br><br>
+<table >
+  <tr >
+    <td><img style="width: 400px; height: auto;margin-right: 50px;" src="amanda.png" alt=""></td>
+    <td><img style="width: 400px; height: auto;margin-right: 50px;" src="@reallygreatsite.png" alt=""></td>
+    <td><img style="width: 400px; height: auto;" src="Jason Salvi.png" alt=""></td>
+  </tr>
+</table>
+<h3 style="margin-top: 30px;margin-left: 600px;font-size: 30px; border-bottom: 1px solid black;margin-right: 620px;padding-bottom: 5px;margin-bottom: 100px;padding-left: 20px;width: 175px;">Our brands</h3>
+<table style="margin-left: 120px;">
+        
+    <tr>
+     
+     <td style="width: 400px;padding-left: 20px;">
+      <a href="indah.html"></a> <img style="width: 150px;padding-left: 39px;" src="Add a heading.png" alt="Indah"></a>
+     
+     </td>
+     <td style="width: 400px;padding-left: 70px;" >
+      <a href="Keitha.html"><img style="width: 150px;padding-left: 39px;" src="Keitha.png" alt="Keitha"></a>
+       
+     </td>
+     <td style="width: 400px;padding-left: 70px;" >
+      <a href="Saanjh.html"> <img style="width: 150px;padding-left: 39px;" src="Saanjh.png" alt="Saanjh"></a>
+     
+      </td>
+      
+      
+    </tr>
+  </table><br><br><br>
+  <footer class="footer">
+    <div class="l-footer">
+      <a href="indah.html"><h1><img style="width: 150px;height: auto;" src="Add a heading.png" alt=""></h1></a>
+      <p style="font-size: 20px;">Indah is an International chain of hotels. We are  happily serving people since 1990. Our staff and services are primarily dedicated towards making our customers feel at home.</p><br><br>
+      <table>
+        <tr>
+          <td><h2>Ping us on:</h2></td>
+          <td style="padding-left: 20px;"><img style="width: 40px;" src="fbb.png" alt=""></td>
+          <td><img style="width: 40px; margin-left: 30px;" src="inst.png" alt=""></td>
+          <td><img style="width: 40px;margin-left: 30px;" src="twit.png" alt=""></td>
+        </tr>
+      </table>
+    </div>
+    <ul class="r-footer" style="padding-top: 70px;">
+      <li>
+        <h2>Customer Service</h2>
+        <ul class="contents">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ'S</a></li>
+          <li><a href="#">Customer Service</a></li>
+        </ul>
+      </li>
+      <li class="features">
+        <h2>Corporate Sites</h2>
+       <ul class="contentbox">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Investor Relations</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="#">Careers</a></li>
+       </ul>
+      </li>
+      
+      <ul class="content">
+        <h2>Booking</h2>
+        <li><a href="#">Banquet hall</a></li>
+        <li><a href="#">Meeting room</a></li>
+        <li><a href="#">Villa</a></li>
+        <li><a href="#">Cancellation Policy</a></li>
+       
+      </ul>
+    </ul>
+    <div class="b-footer" >
+      <span style="margin-left: 10px;border-right: 1px solid white;
+      padding-right: 10px;">Privacy Policy</span>
+      <span style="margin-left: 10px;border-right: 1px solid white;
+      padding-right: 10px;">Cookie Center</span>
+      <span style="margin-left: 10px;border-right: 1px solid white;
+      padding-right: 10px;">Modern Slavery and Human Trafficking</span>
+      <span style="margin-left: 10px;border-right: 1px solid white;
+      padding-right: 10px;">Security & Safety</span>
+      <span style="margin-left: 10px;border-right: 1px solid white;
+      padding-right: 10px;">All Rights Reserved by &copy; Indah-hotels 2021.</span>
+     
+    </div>
+  </footer>
+  
+                        
+                       
+    </body>
+    </html>
